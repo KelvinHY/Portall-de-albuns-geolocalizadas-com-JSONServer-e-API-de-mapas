@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kelvin Vinicius Gomes Marinho">
+    <title>Minha Página</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
+    
+
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoia2VsdmludnJ3IiwiYSI6ImNscG9kZnk3djBjcjgyam9pODlibWoyZXAifQ.WJIsDFB0amAbYAEy1KDpCA';
+    </script>
+</head>
+
+<body>
+    <header class="bg-dark"> 
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/Logo.jpeg" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">E-Sports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container-fluid">
+
+          <h2 class="text-center pt-5">Valorant</h2>
+
+            <div class="row pt-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/Team.png" class="d-block w-100" alt="Imagens Valornt">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/berlin.jpg" class="d-block w-100" alt="Imagens Valornt">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/Phoenix.jpg" class="d-block w-100" alt="Imagens Valornt">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Prévia</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Próximo</span>
+                    </button>
+                  </div>
+           </div>
+        
+           <h2 class="text-center pt-5">Mapa</h2>
+           
+
+            <div class="row pt-5">
+              <section class="map">
+                <h2>MAPA</h2>
+                <p>localizações de finais</p>
+                <div id='map' style='width: 100%; height: 400px;'></div>
+            </section>
+            </div>
+
+            <h2 class="text-center pt-5">Personagens Valorant</h2>
+
+            <div class="row pt-5">
+                <div class="col-md-3 col-sm-12"> 
+                    <div class="card" style="width: 100%;"> 
+                      <a href="index2.html">
+                        <img src="img/Sova.webp" class="card-img-top" alt="Imagens Personagens Valorant">
+                      </a> 
+                      <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Identificador do Álbum: 1</h5>
+                            <h5 class="card-title">Título do Álbum: Melhores Momentos</h5>
+                            <p class="card-text">Descrição do Álbum: Uma coleção dos melhores momentos de jogos.</p>
+                            <p class="card-text">Localização Geográfica do Álbum (Longitude, Latitude): -43.94174120799321, -19.9185731365762</p>
+                            <p class="card-text">Data do Álbum: 01/12/2023</p>
+                            <p class="card-text">URL da Imagem de Capa do Álbum: <img src="img/capa_album.jpg" alt="Capa do Álbum"></p>
+                            <a href="index2.html" class="btn btn-primary">Detalhes</a>
+                        </div>
+                    </div>
+                       
+                      </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="card" style="width: 100%;"> 
+                      <img src="img/fenix.jpeg" class="card-img-top" alt="Imagens Personagens Valorant">
+                        <div class="card-body">
+                          <div class="card-body">
+                            <h5 class="card-title">Identificador do Álbum: 1</h5>
+                            <h5 class="card-title">Título do Álbum: Melhores Momentos</h5>
+                            <p class="card-text">Descrição do Álbum: Uma coleção dos melhores momentos de jogos.</p>
+                            <p class="card-text">Localização Geográfica do Álbum (Longitude, Latitude): -43.94174120799321, -19.9185731365762</p>
+                            <p class="card-text">Data do Álbum: 01/12/2023</p>
+                            <p class="card-text">URL da Imagem de Capa do Álbum: <img src="img/capa_album.jpg" alt="Capa do Álbum"></p>
+                            <a href="index2.html" class="btn btn-primary">Detalhes</a>
+                        </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 col-sm-12"> 
+                    <div class="card" style="width: 100%;"> 
+                        <img src="img/Reyna.jpeg" class="card-img-top" alt="Imagens Personagens Valorant">
+                        <div class="card-body">
+                          <div class="card-body">
+                            <h5 class="card-title">Identificador do Álbum: 1</h5>
+                            <h5 class="card-title">Título do Álbum: Melhores Momentos</h5>
+                            <p class="card-text">Descrição do Álbum: Uma coleção dos melhores momentos de jogos.</p>
+                            <p class="card-text">Localização Geográfica do Álbum (Longitude, Latitude): -43.94174120799321, -19.9185731365762</p>
+                            <p class="card-text">Data do Álbum: 01/12/2023</p>
+                            <p class="card-text">URL da Imagem de Capa do Álbum: <img src="img/capa_album.jpg" alt="Capa do Álbum"></p>
+                            <a href="index2.html" class="btn btn-primary">Detalhes</a>
+                        </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="card" style="width: 100%;"> 
+                        <img src="img/breach.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <div class="card-body">
+                            <h5 class="card-title">Identificador do Álbum: 1</h5>
+                            <h5 class="card-title">Título do Álbum: Melhores Momentos</h5>
+                            <p class="card-text">Descrição do Álbum: Uma coleção dos melhores momentos de jogos.</p>
+                            <p class="card-text">Localização Geográfica do Álbum (Longitude, Latitude): -43.94174120799321, -19.9185731365762</p>
+                            <p class="card-text">Data do Álbum: 01/12/2023</p>
+                            <p class="card-text">URL da Imagem de Capa do Álbum: <img src="img/capa_album.jpg" alt="Capa do Álbum"></p>
+                            <a href="index2.html" class="btn btn-primary">Detalhes</a>
+                        </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row pt-2" id="collectioon2">
+                <div class="col-md-3 col-sm-12"> 
+                    <div class="card" style="width: 100%;"> 
+                        <img src="img/skye.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <div class="card-body">
+                            <h5 class="card-title">Identificador do Álbum: 1</h5>
+                            <h5 class="card-title">Título do Álbum: Melhores Momentos</h5>
+                            <p class="card-text">Descrição do Álbum: Uma coleção dos melhores momentos de jogos.</p>
+                            <p class="card-text">Localização Geográfica do Álbum (Longitude, Latitude): -43.94174120799321, -19.9185731365762</p>
+                            <p class="card-text">Data do Álbum: 01/12/2023</p>
+                            <p class="card-text">URL da Imagem de Capa do Álbum: <img src="img/capa_album.jpg" alt="Capa do Álbum"></p>
+                            <a href="index2.html" class="btn btn-primary">Detalhes</a>
+                        </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="card" style="width: 100%;"> 
+                        <img src="img/raze.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <div class="card-body">
+                            <h5 class="card-title">Identificador do Álbum: 1</h5>
+                            <h5 class="card-title">Título do Álbum: Melhores Momentos</h5>
+                            <p class="card-text">Descrição do Álbum: Uma coleção dos melhores momentos de jogos.</p>
+                            <p class="card-text">Localização Geográfica do Álbum (Longitude, Latitude): -43.94174120799321, -19.9185731365762</p>
+                            <p class="card-text">Data do Álbum: 01/12/2023</p>
+                            <p class="card-text">URL da Imagem de Capa do Álbum: <img src="img/capa_album.jpg" alt="Capa do Álbum"></p>
+                            <a href="index2.html" class="btn btn-primary">Detalhes</a>
+                        </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="card" style="width: 100%;">
+                        <img src="img/Neon.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <div class="card-body">
+                            <h5 class="card-title">Identificador do Álbum: 1</h5>
+                            <h5 class="card-title">Título do Álbum: Melhores Momentos</h5>
+                            <p class="card-text">Descrição do Álbum: Uma coleção dos melhores momentos de jogos.</p>
+                            <p class="card-text">Localização Geográfica do Álbum (Longitude, Latitude): -43.94174120799321, -19.9185731365762</p>
+                            <p class="card-text">Data do Álbum: 01/12/2023</p>
+                            <p class="card-text">URL da Imagem de Capa do Álbum: <img src="img/capa_album.jpg" alt="Capa do Álbum"></p>
+                            <a href="index2.html" class="btn btn-primary">Detalhes</a>
+                        </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 col-sm-12"> 
+                    <div class="card" style="width: 100%;"> 
+                        <img src="img/Gekko.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <div class="card-body">
+                            <h5 class="card-title">Identificador do Álbum: 1</h5>
+                            <h5 class="card-title">Título do Álbum: Melhores Momentos</h5>
+                            <p class="card-text">Descrição do Álbum: Uma coleção dos melhores momentos de jogos.</p>
+                            <p class="card-text">Localização Geográfica do Álbum (Longitude, Latitude): -43.94174120799321, -19.9185731365762</p>
+                            <p class="card-text">Data do Álbum: 01/12/2023</p>
+                            <p class="card-text">URL da Imagem de Capa do Álbum: <img src="img/capa_album.jpg" alt="Capa do Álbum"></p>
+                            <a href="index2.html" class="btn btn-primary">Detalhes</a>
+                        </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        
+        </div>
+
+        
+       
+    </main>
+
+
+    <footer class="bg-dark text-white">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="card">
+              <img src="img/foto.jpeg" class="card-img-top" alt="Sua Foto" style="width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title">Kelvin Vinicius</h5>
+                <p class="card-text"><strong>Curso:</strong> Tecnólogo - Análise e desenvolvimento de sistemas.(NOITE)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <a href="https://github.com/KelvinHY" class="btn btn-primary btn-block"><i class="fab fa-facebook"></i> GitHub</a>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <a href="https://www.linkedin.com/in/kelvin-vinicius-918981229/" class="btn btn-primary btn-block"><i class="fab fa-twitter"></i> Linkedin</a>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <a href="https://www.instagram.com/kelvinvrw/" class="btn btn-primary btn-block"><i class="fab fa-instagram"></i> Instagram</a>
+              </div>
+
+              <p style="padding: 35px;"><strong>Criador da Página:</strong> Kelvin Vinicius </br> </br>
+                
+                Página explicativa e demonstrativa sobre personagens e skins do jogo competitivo que o brasil
+                foi campeão mundial chamado VALORANT.</p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+  
+              var map = new mapboxgl.Map({
+                  container: 'map',
+                  style: 'mapbox://styles/mapbox/streets-v11',
+                  center: [-73.932157053142, 40.82201197847593],
+                  zoom: 10
+              });
+  
+              // Adicione marcadores para cada álbum
+              var albums = [
+                  { title: 'Album 1', coordinates: [-73.932157053142, 40.82201197847593], albumLink: 'album.html?album=nome do album p buscar' },
+                  { title: 'Album 2', coordinates: [-73.942157053142, 40.83201197847593], albumLink: 'album.html?album=nome do album p buscar' },
+                  { title: 'Album 3', coordinates: [-73.952157053142, 40.81201197847593], albumLink: 'album.html?album=nome do album p buscar' }
+                  // Adicione mais álbuns conforme necessário
+              ];
+  
+              albums.forEach(function (album) {
+  
+                  var marker = new mapboxgl.Marker({
+                      draggable: true
+                  })
+                      .setLngLat(album.coordinates)
+                      .addTo(map);
+              });
+          });
+      </script>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

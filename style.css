@@ -1,0 +1,28 @@
+.carousel{
+    width: 75%;
+    margin: 0 auto;
+}
+.d-block{
+    height: 400px;
+}
+
+.mapa {
+    height: 350px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header img{
+    height: 80px;
+    width: 80px;
+}
+
+.navbar-nav li a{
+    color: white;
+}
+
+body{
+    background-color: slategray;
+}
+
